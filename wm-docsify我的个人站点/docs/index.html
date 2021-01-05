@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WM-自律给我自由</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+</head>
+<body>
+<nav>
+  <a href="/">WM 个人博客</a>
+</nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '=自律给我自由=',//文档标题，会显示在侧边栏顶部。
+      repo: '',//GitHub 上的仓库地址，会在页面右上角渲染一个 GitHub 角标。
+
+      search: {//全文搜索
+        paths: 'auto',
+        depth: 3,
+        placeholder: {
+          '/de-de/': 'Suche',
+          '/zh-cn/': '搜索',
+          '/': 'Search'
+        },
+        noData: {
+          '/de-de/': 'Keine Ergebnisse!',
+          '/zh-cn/': '没有结果!',
+          '/': 'No results!'
+        },
+      },
+      count:{//字数统计
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      }
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script><!--全文搜索-->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script><!--图片缩放-->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script><!--复制到剪贴板-->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script><!--字数统计-->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.22.0/components/prism-java.min.js"></script><!--java代码高亮-->
+</body>
+</html>
